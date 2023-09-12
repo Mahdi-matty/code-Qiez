@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    background-color: #f9fbfd;
+}
+#topLeft {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    align-items: center;
+}
