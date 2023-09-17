@@ -8,76 +8,80 @@
         <div>
             <h2>Time left: <span id="timeLeft"> 60</span></h2>
         </div>
-        <div class="test" data-number="1" data-status="hidden">
-            <p>how long is 1 mile? </p>
-            <form class="testForm">
-               <input type="radio" id="mileFirst" name="mile" value="1609m" data-score="true">
-               <label for="mileFirst">1609m</label></br>
-               <input type="radio" id="mileSecond" name="mile" value="1509m" data-score="false">
-               <label for="mileSecond">1509m</label></br>
-               <input type="radio" id="mileThird" name="mile" value="1709m" data-score="false">
-               <label for="mileThird">1709m</label></br>
-               <input type="radio" id="mileFourth" name="mile" value="1409m" data-score="false">
-               <label for="mileFourth">1409m</label></br>
-               <input type="submit" value="submit">
-            </form>
-        </div>
-        <div class="test" data-number="2" data-status="hidden">
-            <p>How many liter is in 1 Gallon?</p>
-            <form class="testForm">
-                <input type="radio" id="gallonFirst" name="gallon" value="7.57" data-score="false">
-               <label for="gallonFirst">7.57l</label></br>
-               <input type="radio" id="gallonSecond" name="gallon" value="11.35" data-score="false">
-               <label for="gallonSecond">11.35l</label></br>
-               <input type="radio" id="gallonThird" name="gallon" value="15.14" data-score="false">
-               <label for="gallonThird">15.14l</label></br>
-               <input type="radio" id="gallonFourth" name="gallon" value="3.78" data-score="true">
-               <label for="gallonFourth">3.78l</label></br>
-               <input type="submit" value="submit">
-            </form>
-        </div>
-        <sdiv class="test" data-number="3" data-status="hidden">
-            <p>how many kg is 1lb???</p>
-            <form class="testForm">
-                <input type="radio" id="lbFirst" name="lb" value="0.650" data-score="false">
-               <label for="lbFirst">0.650</label></br>
-               <input type="radio" id="lbSecond" name="lb" value="0.453" data-score="true">
-               <label for="lbSecond">0.443</label></br>
-               <input type="radio" id="lbThird" name="lb" value="0.543" data-score="false">
-               <label for="lbThird">0.543</label></br>
-               <input type="radio" id="lbFourth" name="lb" value="0.710" data-score="false">
-               <label for="lbFourth">0.710</label></br>
-               <input type="submit" value="submit">
-            </form>
-        </div>
-        <div class="test" data-number="4" data-status="hidden">
-            <p>0 degree Celsius is ? fahrenheit</p>
-            <from class="testForm">
-               <input type="radio" id="ftocFirst" name="fahrenheit" value="30" data-score="false">
-               <label for="ftocFirst">30</label>
-               <input type="radio" id="ftocSecond" name="fahrenheit" value="31" data-score="false">
-               <label for="ftocSecond">31</label>
-               <input type="radio" id="ftocThird" name="fahrenheit" value="32" data-score="true">
-               <label for="ftocThird">32</label>
-               <input type="radio" id="ftocFourth" name="fahrenheit" value="33" data-score="false">
-               <label for="ftocFourth">33</label>
-               <input type="submit" value="submit">
-            </from>
-        </div>
-        <div class="test" data-number="5" data-status="hidden">
-            <p>1 inch is equall to ? cm</p>
-            <form class="testForm">
-                <input type="radio" id="inchFirst" name="inch" value="2.20" data-score="false">
-                <label for="inchFirst">2.20</label>
-                <input type="radio" id="inchSecond" name="inch" value="2.34" data-score="false">
-                <label for="inchSecond">2.34</label>
-                <input type="radio" id="inchThird" name="inch" value="2.44" data-score="false">
-                <label for="inchThird">2.44</label>
-                <input type="radio" id="inchFourth" name="inch" value="2.54" data-score="true">
-                <label for="inchFourth">2.54</label>
-                <input type="submit" value="submit">
-            </form>
-        </div>
+        <main>
+            <div class="test" data-number="1">
+                <p>how long is 1 mile? </p>
+                <form class="testForm">
+                    <input type="radio" id="mileFirst" name="mile" value="1609m" data-score="true">
+                    <label for="mileFirst">1609m</label></br>
+                    <input type="radio" id="mileSecond" name="mile" value="1509m" data-score="false">
+                    <label for="mileSecond">1509m</label></br>
+                    <input type="radio" id="mileThird" name="mile" value="1709m" data-score="false">
+                    <label for="mileThird">1709m</label></br>
+                    <input type="radio" id="mileFourth" name="mile" value="1409m" data-score="false">
+                    <label for="mileFourth">1409m</label></br>
+                    <input type="submit" id="submitOne" value="submit">
+                </form>
+            </div>
+            <div class="test" data-number="2">
+                <p>How many liter is in 1 Gallon?</p>
+                <form class="testForm">
+                    <input type="radio" id="gallonFirst" name="gallon" value="7.57" data-score="false">
+                    <label for="gallonFirst">7.57l</label></br>
+                    <input type="radio" id="gallonSecond" name="gallon" value="11.35" data-score="false">
+                    <label for="gallonSecond">11.35l</label></br>
+                    <input type="radio" id="gallonThird" name="gallon" value="15.14" data-score="false">
+                    <label for="gallonThird">15.14l</label></br>
+                    <input type="radio" id="gallonFourth" name="gallon" value="3.78" data-score="true">
+                    <label for="gallonFourth">3.78l</label></br>
+                    <input type="submit" id="submitTwo" value="submit">
+                </form>
+            </div>
+            <div class="test" data-number="3">
+                <p>how many kg is 1lb???</p>
+                <form class="testForm">
+                    <input type="radio" id="lbFirst" name="lb" value="0.650" data-score="false">
+                    <label for="lbFirst">0.650</label></br>
+                    <input type="radio" id="lbSecond" name="lb" value="0.453" data-score="true">
+                    <label for="lbSecond">0.443</label></br>
+                    <input type="radio" id="lbThird" name="lb" value="0.543" data-score="false">
+                    <label for="lbThird">0.543</label></br>
+                    <input type="radio" id="lbFourth" name="lb" value="0.710" data-score="false">
+                    <label for="lbFourth">0.710</label></br>
+                    <input type="submit" id="submitThree" value="submit">
+                </form>
+            </div>
+            <div class="test" data-number="4">
+                <p>0 degree Celsius is ? fahrenheit</p>
+                <from class="testForm">
+                    <input type="radio" id="ftocFirst" name="fahrenheit" value="30" data-score="false">
+                    <label for="ftocFirst">30</label>
+                    <input type="radio" id="ftocSecond" name="fahrenheit" value="31" data-score="false">
+                    <label for="ftocSecond">31</label>
+                    <input type="radio" id="ftocThird" name="fahrenheit" value="32" data-score="true">
+                    <label for="ftocThird">32</label>
+                    <input type="radio" id="ftocFourth" name="fahrenheit" value="33" data-score="false">
+                    <label for="ftocFourth">33</label>
+                    <input type="submit" id="submitFour" value="submit">
+                </from>
+            </div>
+            <div class="test" data-number="5">
+                <p>1 inch is equall to ? cm</p>
+                <form class="testForm">
+                    <input type="radio" id="inchFirst" name="inch" value="2.20" data-score="false">
+                    <label for="inchFirst">2.20</label>
+                    <input type="radio" id="inchSecond" name="inch" value="2.34" data-score="false">
+                    <label for="inchSecond">2.34</label>
+                    <input type="radio" id="inchThird" name="inch" value="2.44" data-score="false">
+                    <label for="inchThird">2.44</label>
+                    <input type="radio" id="inchFourth" name="inch" value="2.54" data-score="true">
+                    <label for="inchFourth">2.54</label>
+                    <input type="submit" id="submitFive" value="submit">
+                </form>
+            </div>
+        </main>
+        <section id="lastShown"> your over all score is : <span id="lastScore">0</span></section>
+        
         <div id="topLeft">
             <button id="startBtn">Start</button>
         </div>

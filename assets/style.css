@@ -4,10 +4,31 @@
 body {
     height: 100%;
     background-color: #f9fbfd;
+    display: flex;
+    min-height: 40vh;
 }
 #topLeft {
-    position: relative;
+    display: flex;
+    justify-content: center;
     top: 50px;
     left: 50px;
     align-items: center;
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    top: 300px;
+}
+button {
+    display: block;
+    width: 100px;
+}
+.test {
+    display: none;
+}
+#lastShown {
+     display: none;
 }
