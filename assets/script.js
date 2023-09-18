@@ -85,20 +85,10 @@ submitTwo.addEventListener("click", function () {
         document.querySelector("#topPlayer").style.display= "block";
     }
  })
- 
- 
-
- 
- 
-
 // iterate through numbers to call each form one after another
 var formTests = document.querySelectorAll(".testForm");
 let score = 0;
-
-
 // a function that if i lose reduce time by 5 sec!!
-
-
 // var testDivs = document.querySelectorAll(".test");
 // var testNumbers = [];
 // // var testNumbers = testDivs.getAttribute("data-number")
