@@ -86,4 +86,22 @@ button {
   justify-content: center;
   align-items: center;
 }
+.testForm input {
+  background-color: rgba(128, 0, 122, 0.192);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+
+}
+.testForm label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgba(128, 128, 128, 0.158);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.testForm input[type="radio"]:checked + label {
+  background-color: #ff6b6b;}
 
