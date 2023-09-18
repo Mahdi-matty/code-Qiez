@@ -81,4 +81,9 @@ button {
 }
 #endButton {
   display: none;
+  position: relative;
+  top: 500px;
+  justify-content: center;
+  align-items: center;
 }
+

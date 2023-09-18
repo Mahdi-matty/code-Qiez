@@ -85,13 +85,16 @@ submitTwo.addEventListener("click", function () {
         localStorage.setItem("submitedScore", JSON.stringify(submitedScore));
 
         document.querySelector("#topPlayer").style.display= "block";
-        document.querySelector("#endButton").style.display="block"
+        document.querySelector("#endButton").style.display="block";
+        lastShown.style.display= "none";
+        scoreDiv.style.display= "none";
     }
  })
  
  clearList.addEventListener("click", function() {
     var ul = document.querySelector("#lastList");
     ul.innerHTML="";
+    localStorage.clear();
  })
 // iterate through numbers to call each form one after another
 var formTests = document.querySelectorAll(".testForm");
