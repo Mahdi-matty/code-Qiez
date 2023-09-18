@@ -1,8 +1,9 @@
 var timeLef= document.querySelector("#timeLeft");
 let startGame = document.querySelector("#startBtn");
+let time = 60;
 
 startGame.addEventListener("click", function timeRemain() {
-    let time = 60;
+    timeLef.textContent =  time ;
     let timeInterval = setInterval (function () {
         if (time > 0) {
             time --;
@@ -27,6 +28,11 @@ const submitThird = document.querySelector("#submitThree");
 const submitFourth = document.querySelector("#submitFour");
 const submitFifth = document.querySelector("#submitFive");
 const lastShown = document.querySelector("#lastShown");
+const scoreDiv = document.querySelector("#scoreDiv");
+// let playerX = document.querySelector("#name").value;
+const finalSubmit = document.querySelector("#finalSubmit");
+// let lastList = document.querySelector("#lastList");
+let submitedScore = JSON.parse(localStorage.getItem("submitedScore")) || [];
 
 startGame.addEventListener("click", function () {
     
@@ -54,9 +60,35 @@ submitTwo.addEventListener("click", function () {
  }
  )
  submitFifth.addEventListener("click", function () {
-   fifthIn.style.display = "none";
+//    fifthIn.style.display = "none";
    lastShown.style.display = "block";
+   document.querySelector("h2").style.display= "none";
+   document.querySelector("main").style.display= "none";
+   document.querySelector("#topLeft").style.display = "none";
+   scoreDiv.style.display = "block"
  })
+
+ finalSubmit.addEventListener("click", function() {
+    
+    var allScore = localStorage.getItem("overAllScore");
+    let playerX = document.querySelector("#name").value;
+    submitedScore.push({name: playerX, score:allScore});
+    submitedScore.sort((a, b) => b.score - a.score)
+    var ul = document.querySelector("#lastList");
+    ul.innerHTML = "";
+    for (let i=0; i<submitedScore.length; i++) {
+        var li = document.createElement("li");
+        li.textContent= `${submitedScore[i].name}, ${submitedScore[i].score}`;
+        lastList.appendChild(li);
+        localStorage.setItem("submitedScore", JSON.stringify(submitedScore));
+
+        document.querySelector("#topPlayer").style.display= "block";
+    }
+ })
+ 
+ 
+
+ 
  
 
 // iterate through numbers to call each form one after another
@@ -92,6 +124,7 @@ formTests.forEach(function(formTest) {
                 score += 20;
             }else {
                 deductTime(5);
+                
             }
         }
         localStorage.setItem("overAllScore", score);
@@ -104,16 +137,17 @@ function deductTime(seconds) {
     let currentTime = parseInt(timeLeft.textContent, 10);
     currentTime -= seconds;
     if (currentTime < 0) {
-      currentTime = 0; // Ensure time doesn't go negative
+      currentTime = 0; 
     }
-    timeLeft.textContent = currentTime;
+    timeLef.textContent = currentTime;
   }
+  
  
 // i should add eventlistener to start button so when i click test div s start showing one after another.
 // overall score
-function overall() {
-    var allScore = localStorage.getItem("overAllScore");
-    lastScore.textContent = allScore;
+// function overall() {
+//     var allScore = localStorage.getItem("overAllScore");
+//     lastScore.textContent = allScore;
     
 
-}
+// }

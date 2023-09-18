@@ -5,9 +5,14 @@
         <link rel="stylesheet" type="text/css" href="./assets/style.css">
     </head>
     <body>
-        <div>
-            <h2>Time left: <span id="timeLeft"> 60</span></h2>
-        </div>
+        <header>
+            <div>
+                <h2>Time left: <span id="timeLeft"> 60</span></h2>
+            </div>
+            <div id="topLeft">
+                <button id="startBtn">Start</button>
+            </div>
+        </header>
         <main>
             <div class="test" data-number="1">
                 <p>how long is 1 mile? </p>
@@ -53,7 +58,7 @@
             </div>
             <div class="test" data-number="4">
                 <p>0 degree Celsius is ? fahrenheit</p>
-                <from class="testForm">
+                <form class="testForm">
                     <input type="radio" id="ftocFirst" name="fahrenheit" value="30" data-score="false">
                     <label for="ftocFirst">30</label>
                     <input type="radio" id="ftocSecond" name="fahrenheit" value="31" data-score="false">
@@ -63,7 +68,7 @@
                     <input type="radio" id="ftocFourth" name="fahrenheit" value="33" data-score="false">
                     <label for="ftocFourth">33</label>
                     <input type="submit" id="submitFour" value="submit">
-                </from>
+                </form>
             </div>
             <div class="test" data-number="5">
                 <p>1 inch is equall to ? cm</p>
@@ -80,11 +85,17 @@
                 </form>
             </div>
         </main>
-        <section id="lastShown"> your over all score is : <span id="lastScore">0</span></section>
-        
-        <div id="topLeft">
-            <button id="startBtn">Start</button>
+        <section id="lastShown"> your over all score is : </br><span id="lastScore">0</span></section>
+        <div id="scoreDiv">
+            <input type="name" id="name" placeholder="Name">
+            <input type="submit" id="finalSubmit" value="submit">
         </div>
+        <div id="topPlayer">
+            <ul id="lastList">
+
+            </ul>
+        </div>
+        
         <script src="./assets/script.js"></script>
     </body>
 </html>
