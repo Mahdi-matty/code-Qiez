@@ -96,6 +96,10 @@ submitTwo.addEventListener("click", function () {
     ul.innerHTML="";
     localStorage.clear();
  })
+
+ restart.addEventListener("click", function() {
+    location.reload();
+ })
 // iterate through numbers to call each form one after another
 var formTests = document.querySelectorAll(".testForm");
 let score = 0;
