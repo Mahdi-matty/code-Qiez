@@ -123,7 +123,9 @@ formTests.forEach(function(formTest) {
             if (dScore == "true") {
                 score += 20;
             }else {
-                deductTime(5);
+                // deductTime(5);
+                time -= 5;
+                timeLef.textContent =time;
                 
             }
         }
@@ -133,14 +135,14 @@ formTests.forEach(function(formTest) {
 
     })
 })
-function deductTime(seconds) {
-    let currentTime = parseInt(timeLeft.textContent, 10);
-    currentTime -= seconds;
-    if (currentTime < 0) {
-      currentTime = 0; 
-    }
-    timeLef.textContent = currentTime;
-  }
+// function deductTime(seconds) {
+//     let currentTime = parseInt(timeLeft.textContent, 10);
+//     currentTime -= seconds;
+//     if (currentTime < 0) {
+//       currentTime = 0; 
+//     }
+//     timeLef.textContent = currentTime;
+//   }
   
  
 // i should add eventlistener to start button so when i click test div s start showing one after another.
