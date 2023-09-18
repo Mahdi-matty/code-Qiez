@@ -29,6 +29,8 @@ const submitFourth = document.querySelector("#submitFour");
 const submitFifth = document.querySelector("#submitFive");
 const lastShown = document.querySelector("#lastShown");
 const scoreDiv = document.querySelector("#scoreDiv");
+let clearList = document.querySelector("#clearList");
+let restart = document.querySelector("#restart")
 // let playerX = document.querySelector("#name").value;
 const finalSubmit = document.querySelector("#finalSubmit");
 // let lastList = document.querySelector("#lastList");
@@ -83,7 +85,13 @@ submitTwo.addEventListener("click", function () {
         localStorage.setItem("submitedScore", JSON.stringify(submitedScore));
 
         document.querySelector("#topPlayer").style.display= "block";
+        document.querySelector("#endButton").style.display="block"
     }
+ })
+ 
+ clearList.addEventListener("click", function() {
+    var ul = document.querySelector("#lastList");
+    ul.innerHTML="";
  })
 // iterate through numbers to call each form one after another
 var formTests = document.querySelectorAll(".testForm");

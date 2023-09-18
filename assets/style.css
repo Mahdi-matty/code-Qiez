@@ -73,9 +73,12 @@ button {
 #scoreDiv {
   display: none;
 }
-#topplayer {
+#topPlayer {
   display: none;
   width: 10vw;
-  height: 400px;
   background-color: darkslategray;
+  font-size: 20px;
+}
+#endButton {
+  display: none;
 }
